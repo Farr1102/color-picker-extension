@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title>Color Picker</title>
+    <style>
+      body {
+        padding: 10px;
+      }
+      #colorPicker {
+        width: 100px;
+        height: 100px;
+      }
+      #tip {
+        font-size: 12px;
+        cursor: pointer;
+      }
+      #tip:hover {
+        content: '单机上方白色区域，弹出取色器后点击吸管后，在页面上单击取色'
+      }
+    </style>
+  </head>
+  <body>
+    <input type="color" id="colorPicker" value="#ffffff" />
+    <p id="tip" title="单机上方白色区域，弹出取色器后点击吸管后，在页面上单击取色">
+      操作提示(悬浮)
+    </p>
+  </body>
+</html>
