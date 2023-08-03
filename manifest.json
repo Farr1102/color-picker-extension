@@ -6,6 +6,15 @@
   "permissions": [
     "activeTab"
   ],
+  "commands": {
+    "open_plugin": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "mac": "Command+Q"
+      },
+      "description": "Open the color picker plugin"
+    }
+  },
   "action": {
     "default_popup": "popup.html"
   },

@@ -16,14 +16,35 @@
         cursor: pointer;
       }
       #tip:hover {
-        content: '单机上方白色区域，弹出取色器后点击吸管后，在页面上单击取色'
+        content: "单机上方白色区域，弹出取色器后点击吸管后，在页面上单击取色";
       }
+      .custom-modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+      }
+     
     </style>
   </head>
   <body>
-    <input type="color" id="colorPicker" value="#ffffff" />
-    <p id="tip" title="单机上方白色区域，弹出取色器后点击吸管后，在页面上单击取色">
+    <input type="color" id="colorPicker" value="#ffffff" placeholder="选取颜色" />
+    <div>当前颜色：<span id="colorValue">#ffffff</span></div>
+    <p
+      id="tip"
+      title="单机上方白色区域，弹出取色器后点击吸管后，在页面上单击取色"
+    >
       操作提示(悬浮)
     </p>
+    <div class="custom-modal" id="modal">
+      <p id="modalMessage"></p>
+    </div>
+    <script src="./popup.js"></script>
   </body>
 </html>
